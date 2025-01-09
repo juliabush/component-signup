@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Fonts */
+    --ff-main: 'Poppins';
+
+    --fw-v-light: 400;
+    --fw-light: 500;
+    --fw-mid: 600;
+    --fw-bold: 700;
+
+    --font-size: 1rem;
+    /* Colors */
+    --clr-primary-red: hsl(0, 100%, 74%) ;
+    --clr-primary-green: hsl(154, 59%, 51%);
+
+    --clr-accent-blue: hsl(248, 32%, 49%);
+
+    --clr-neutral-darkblue: hsl(249, 10%, 26%) ;
+    --clr-neutral-mutedblue: hsl(246, 25%, 77%);
+}
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  html, body {
+    height: 100%;
+    display: grid;
+    text-align: center;
+    font-family: var(--ff-main);
+    background: url(images/bg-intro-mobile.png) no-repeat;
+    background-color: var(--clr-primary-red);
+  }
+  .component__text {
+    color: white;
+    margin: 2rem;
+    margin-top: 5rem;
+  }
+  .component__main-title{
+    margin-bottom: 1rem;
+    font-weight: var(--fw-bold);
+  }
