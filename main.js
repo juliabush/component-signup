@@ -7,22 +7,13 @@ form.addEventListener('submit', (e) => {
     const inputs = document.querySelectorAll('#form input');
 
     inputs.forEach((input) => {
-        // Reset error class on every input
-        input.parentElement.classList.remove('error');
-
         if (!input.value) {
             input.parentElement.classList.add('error');
         } else {
-            if (input.type === 'email') {
-                if (validateEmail(input.value)) {
-                    input.parentElement.classList.remove('error');
-                } else {
-                    input.parentElement.classList.add('error');
-                }
-            }
+        input.parentElement.classList.remove('error');
         }
+        });
     });
-});
 
 // Email validation function
 function validateEmail(email) {

@@ -128,6 +128,9 @@
     border-radius: .25rem;
    
   }
+  .error {
+    
+  }
   button {
     place-self: center;
     width: 95%;
